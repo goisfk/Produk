@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katalog Produk</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #004d99;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .catalog {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      padding: 24px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .product-card h2 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    .product-card p {
+      font-size: 16px;
+      color: #555;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e91e63;
+      margin: 16px 0;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons button {
+      background-color: #004d99;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .buttons button:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Toko Digital - Katalog Produk</h1>
+  </header>
+
+  <div class="catalog">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/400x250?text=Gambar+Produk" alt="Produk Digital">
+      <h2>Produk Premium Digital</h2>
+      <p>Produk digital eksklusif yang membantu produktivitas Anda. Setelah pembayaran, produk akan dikirim via email/WhatsApp.</p>
+      <div class="price">Rp50.000</div>
+      <div class="buttons">
+        <button onclick="bayarBRI()">Bayar via BRI</button>
+        <button onclick="bayarBCA()">Bayar via BCA</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function bayarBRI() {
+      alert("Transfer ke rekening berikut:\n\nBank: BRI\nNama: SONYA AMBAR RADIKA\nNo. Rek: 1234567890\nNominal: Rp50.000\n\nSetelah transfer, kirim bukti pembayaran via WhatsApp ke 085845456434.");
+    }
+
+    function bayarBCA() {
+      alert("Transfer ke rekening berikut:\n\nBank: BCA\nNama: SONYA AMBAR RADIKA\nNo. Rek: 9876543210\nNominal: Rp50.000\n\nSetelah transfer, kirim bukti pembayaran via WhatsApp ke 085845456434.");
+    }
+  </script>
+
+</body>
+</html>
